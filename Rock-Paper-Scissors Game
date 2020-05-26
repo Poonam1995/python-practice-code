@@ -1,0 +1,61 @@
+Game_choices = ["Rock", "Paper", "Scissors"] #list
+def run_game(): #Function
+    player_1 = input("enter the choice:")
+
+    player_2 = input("enetr the choice:")
+    #testcases
+
+    if player_1 == Game_choices[0] and player_2 == Game_choices[1]: #rockpaper
+        print("congo player_2 win!!! ")
+        try_again()
+
+    elif player_1 == Game_choices[1] and player_2 == Game_choices[2]: #paper_ciz
+        print("congo player_2 win !!!")
+        try_again()
+    elif player_1 == Game_choices[2] and player_2 == Game_choices[1]: #ciz_paper
+        print("congo player_1 win !!!")
+        try_again()
+    elif player_1 == Game_choices[0] and player_2 == Game_choices[2]: #rocciz
+        print("congo player_1 win !!!")
+        try_again()
+
+    elif player_1 == Game_choices[1] and player_2 == Game_choices[0]: #paperock
+        print("congo player_2 win !!!")
+        try_again()
+
+    elif player_1 == Game_choices[2] and player_2 == Game_choices[0]:  #cizrock
+        print("congo player_2 win!!!")
+        try_again()
+    else:
+        print("Oops you both choose same.")
+
+        try_again()
+
+def try_again():
+    interest = input(print(" Enter yes to try again :)"))
+    if interest == "yes":
+        run_game()
+
+    else:
+        print("Game Ended")
+
+
+run_game() #Function calling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
