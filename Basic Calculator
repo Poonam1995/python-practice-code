@@ -1,0 +1,69 @@
+import statistics
+#basics with statistic operatons
+
+
+def calculator():
+    choice = input(print("enter 1 for basic operation and 2 for statistic operations"))
+    if choice == "1":
+        num1 = int(input(print("enter the number1"))) #use int otherwise it will consider as string.
+        num2 = int(input(print("enter the number2")))
+        basic_computations(num1, num2)
+    elif choice == "2":
+        stat_operations()
+    else:
+        print("invalid operation")
+
+def stat_operations():
+#mean,meadian,mode operations
+    elements = []
+    n = int(input(print("enter the number of elememts :"))) 
+    for i in range(0, n):
+        el = int(input())
+        elements.append(el)
+    print(elements)
+    operation = input(print("enter the operation want to perform"))
+    if operation == "mean":
+        print(statistics.mean(elements))
+    elif operation == "median":
+            print(statistics.median(elements))
+    elif operation == "mode":
+        print(statistics.mode(elements))
+    else:
+        print("invalid operation")
+
+def basic_computations(num1, num2):
+
+    #add, sub, mul,div, modulo..
+    operation = input(print("enter the operation want to perform"))
+    if operation == "*":
+        print(num1 * num2)
+    elif operation == "+":
+        print( num1 + num2)
+    elif operation == "-":
+        print(num1 - num2)
+    elif operation == "/":
+        print(num1 / num2)
+    elif operation == "%":
+        print(num1 % num2)
+    else:
+        print("invalid operation")
+
+calculator()    #finalfunctioncalling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
