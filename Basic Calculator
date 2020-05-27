@@ -17,7 +17,7 @@ def stat_operations():
 #mean,meadian,mode operations
     elements = []
     n = int(input(print("enter the number of elememts :"))) 
-    for i in range(0, n): 
+    for i in range(0, n): #range
         el = int(input())
         elements.append(el)
     print(elements)
