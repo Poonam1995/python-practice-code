@@ -27,7 +27,7 @@ def run_game(): #Function
         print("congo player_2 win!!!")
         try_again()
     else:
-        print("Oops you both choose same.")
+        print("Oops you both choose same :(")
 
         try_again()
 
