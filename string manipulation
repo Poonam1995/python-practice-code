@@ -1,0 +1,31 @@
+# string manipulation program
+def add_word(str):      # function calling with parameter
+    sentence = input(print("enter the sentence"))
+     
+    # insert string 
+    # input taken from user
+
+    new_sentence = sentence + str    # add string at the end
+    print(new_sentence)
+
+    # add string at the begining
+
+    new_sentence1 = str + sentence
+    print(new_sentence1)
+
+    # add string in middle of sentence
+
+    sentence_count = int(len(sentence))
+    mid = (sentence_count+1)/2
+    first_half = sentence[0:int(mid-1)]    # type casting needed if mid type is float
+    new_sentence2 = first_half + str + sentence[int (mid):]
+    print(new_sentence2)
+    
+add_word(" python")    # print with space befor python
+
+
+
+
+
+
+
