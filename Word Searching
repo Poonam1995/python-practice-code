@@ -1,0 +1,27 @@
+########## word searching #######
+def search_word(name):                 #fuction with parameter name
+    sentence = input(print("Enter the sentence"))
+    sentence1 = sentence.split()
+    count = int(len(sentence.split()))  # need to split for count wordwise otherwise it will count each character
+    # print(count)
+    no_of_words = 0
+    for i in range(0, count):
+        if sentence1[i] == name:
+
+            print("word found at:", i)  # word with location
+            no_of_words = no_of_words + 1
+            i = i + 1
+        else:
+            i = i + 1
+
+
+    if no_of_words == 0:
+        print("word is not found")
+    else:                    # or you may skip this else
+        print("")
+
+
+
+search_word("github")      # run with word you want to search
+
+
