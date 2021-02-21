@@ -1,0 +1,20 @@
+## simple form creation using string concatenation..
+site = input(print("enter the site name you like the most"))
+name = input(print("enter username"))
+city = input(print("enter your location"))
+
+#with function caling..
+
+def form():
+    
+    print(f"hello {name}, " + f"Welcome to {site}. " + f"Your location is {city}. " + "You have sucessfully registered!!")
+    
+form()
+
+#with variable caling..
+
+
+madlib = f"hello {name}, welcome to {site}. Your location is {city}. You have sucessfully registered!!" 
+
+print(madlib)
+    
